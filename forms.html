@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Sunat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="forms-styles.css">
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="close-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    </header> <!-- Floating Logo -->
+    <div class="floating-logo">
+        <img src="images/sunat.svg" alt="Logo Sunat Ultra" width="150" height="75">
+    </div>
+
+    <!-- Nav Toggle Button -->
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <img src="images/menu.svg" alt="Menu" width="40" height="40">
+    </button>
+
+    <!-- Nav Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" role="navigation" aria-label="Menu utama">
+        <button class="nav-close" id="navClose" aria-label="Tutup menu navigasi">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="nav-header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo Sunat Ultra" width="40" height="40">
+                <span>SUNAT ULTRA</span>
+            </div>
+           
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="#services"><i class="fas fa-stethoscope"></i> Layanan</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="article.html"><i class="fas fa-newspaper"></i> Artikel</a></li>
+            <li><a href="https://wa.me/6285777111597" target="_blank"> <i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+        <div class="social-media-buttons">
+            <h4>Follow US</h4>
+            <ul class="social-links">
+                <li><a href="https://instagram.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://tiktok.com/@sunat.ultra" target="_blank" aria-label="Ikuti kami di TikTok"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://facebook.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://youtube.com/@sunat.ultra" target="_blank" aria-label="Subscribe channel YouTube kami"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="social-media-buttons2">
+            <h4>Play Super Ultra</h4>
+            <audio controls class="custom-player">
+                <source src="audio/Super_Ultra_Happy_and_Fun.mp3" type="audio/mpeg">
+                <source src="audio/mysong.ogg" type="audio/ogg">
+            </audio>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Bagian Kiri: Daftar Paket -->
+        <div class="paket-container">
+            <h2 class="hx"> <img src="images/options.svg" alt="">Pilihan Paket Sunat</h2>
+            <div class="vip-icon1"> <img src="images/vip.svg" alt="" ></div>
+            <div class="vip-icon"> <img src="images/vip.svg" alt="" ></div>
+            <div class="paket-list">
+                
+                <div class="paket-card"> 
+                    
+                    <img src="images/paket-a.png" alt="Paket A">
+                    <h3>Paket A</h3>
+                    <p>Metode: Konvensional</p>
+                    <p>Harga: Rp 500.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan Ringan</p>
+                    
+                </div>
+                <div class="paket-card">
+                    <img src="paket-b.jpg" alt="Paket B">
+                    <h3>Paket B</h3>
+                    <p>Metode: Laser</p>
+                    <p>Harga: Rp 1.000.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan Ringan, Souvenir</p>
+                </div>
+                <div class="paket-card">
+                    <img src="paket-c.jpg" alt="Paket C">
+                    <h3>Paket C</h3>
+                    <p>Metode: Modern</p>
+                    <p>Harga: Rp 1.500.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan, Souvenir, Transportasi</p>
+                </div>
+                <div class="paket-card">
+                    <img src="paket-d.jpg" alt="Paket D">
+                    <h3>Paket D</h3>
+                    <p>Metode: Konvensional</p>
+                    <p>Harga: Rp 700.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan Ringan</p>
+                </div>
+                <div class="paket-card">
+                    <img src="paket-e.jpg" alt="Paket E">
+                    <h3>Paket E</h3>
+                    <p>Metode: Laser</p>
+                    <p>Harga: Rp 1.200.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan Ringan, Souvenir</p>
+                </div>
+                <div class="paket-card">
+                    <img src="paket-f.jpg" alt="Paket F">
+                    <h3>Paket F</h3>
+                    <p>Metode: Modern</p>
+                    <p>Harga: Rp 1.800.000</p>
+                    <p>Fasilitas: Konsultasi, Obat, Makanan, Souvenir, Transportasi</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bagian Kanan: Form Pendaftaran -->
+        <div class="form-container">
+            <h1>Form Pendaftaran Sunat</h1>
+            <form id="registrationForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="usia">Usia:</label>
+                <div class="usia-input">
+                    <input type="number" id="usia" name="usia" placeholder="Usia" required>
+                    <select id="usiaSatuan" name="usiaSatuan" required>
+                        <option value="tahun">Tahun</option>
+                        <option value="bulan">Bulan</option>
+                    </select>
+                </div>
+
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+
+                <label for="beratBadan">Berat Badan (kg):</label>
+                <input type="number" id="beratBadan" name="beratBadan" required>
+
+                <label for="orangTua">Nama Orang Tua:</label>
+                <input type="text" id="orangTua" name="orangTua" required>
+
+                <label for="nomorWA">Nomor WhatsApp:</label>
+                <input type="text" id="nomorWA" name="nomorWA" required pattern="^08[0-9]{8,12}$" placeholder="Contoh: 081234567890">
+
+                <label for="paket">Paket Metode Sunat:</label>
+                <select class="select-paket" id="paket" name="paket" required>
+                    <option value="Paket A">Paket A</option>
+                    <option value="Paket B">Paket B</option>
+                    <option value="Paket C">Paket C</option>
+                    <option value="Paket D">Paket D</option>
+                    <option value="Paket E">Paket E</option>
+                    <option value="Paket F">Paket F</option>
+                </select>
+                <label for="jadwal">Reservasi untuk:</label>
+                <input type="text" id="jadwal" placeholder="Pilih Tanggal dan Waktu">
+                <button class="button-submit"target="_blank">Daftar</button>
+                <div id="loading" style="display: none; color: blue; font-weight: bold; margin-top: 10px;">Menyimpan data...</div>
+            </form>
+        </div>
+    </div>
+
+   <!-- Bagian Daftar Reservasi -->
+<div class="reservasi-container">
+    <h2>Daftar Reservasi Sunat</h2>
+    <table id="reservasiTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Usia</th>
+                <th>Alamat</th>
+                <th>Paket</th>
+                <th>Jadwal</th>
+                
+            </tr>
+        </thead>
+        <tbody id="reservasiBody">
+            <!-- Data akan ditambahkan via JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+    <section id="maps" class="maps">
+        <h2>Temukan Kami Di Sini</h2>
+        <div class="maps-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8767.220425616266!2d108.25979600677364!3d-7.3011676962892444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5ba5a57dcab5%3A0xcd784eeae3a83319!2sKlinik%20Zarzia%20(Ritadr%20Clinic)!5e0!3m2!1sid!2sid!4v1733652703519!5m2!1sid!2sid" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-info">
+                <h3>Hubungi Kami</h3>
+                <p><strong>Telepon:</strong> +6285 777 111 597</p>
+                <p><strong>Email:</strong> info@sunatultra.com</p>
+                <p><strong>Alamat:</strong> Jl. Lokasana Dusun kujang RT02/RW01 Desa Kujang Kecamatan Cikoneng, Kabupaten Ciamis 46261</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Jam Operasional</h4>
+                <p>Senin - Jumat: 06:00 - 17:00</p>
+                <p>Sabtu: 09:00 - 13:00</p>
+                <p>Minggu: 06.00 - 15.00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@sunat.ultra" target="_blank" aria-label="Ikuti kami di TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://facebook.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtube.com/@sunatultra" target="_blank" aria-label="Subscribe channel YouTube kami"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sunat Ultra. Hak cipta dilindungi undang-undang.</p>
+        </div>
+    </footer>
+</main>
+
+<a href="https://wa.me/6285777111597" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="forms.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunat Ultra - Happy And Fun</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="close-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Header untuk PC -->
+     <header class="pc-header">
+        <div class="logo">
+            <a href="#"><img src="Logo-sunat-ultra.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li> <a href="#Services">Layanan</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="floating-logo">
+        <img src="images/sunat.svg" alt="Logo Sunat Ultra" width="150" height="75">
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+    <img src="images/menu.svg" alt="Menu" width="40" height="40">
+    </button>
+    
+    <div class="nav-overlay" id="navOverlay"></div>
+    
+    <nav class="side-nav" role="navigation" aria-label="Menu utama">
+        <button class="nav-close" id="navClose" aria-label="Tutup menu navigasi">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="nav-header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo Sunat Ultra" width="40" height="40">
+                <span>Sunat Ultra</span>
+              
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="#services"><i class="fas fa-stethoscope"></i> Layanan</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="article.html"><i class="fas fa-newspaper"></i> Artikel</a></li>
+            <li><a href="https://wa.me/6285777111597" target="_blank"> <i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+        <div class="social-media-buttons">
+            <h4>Follow US</h4>
+            <ul class="social-links">
+<li><a href="https://instagram.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Instagram"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://tiktok.com/@sunat.ultra" target="_blank" aria-label="Ikuti kami di TikTok"><i class="fab fa-tiktok"></i></a></li>
+<li><a href="https://facebook.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Facebook"><i class="fab fa-facebook"></i></a></li>
+<li><a href="https://youtube.com/@sunat.ultra" target="_blank" aria-label="Subscribe channel YouTube kami"><i class="fab fa-youtube"></i></a></li>
+        </div>
+        <div class="social-media-buttons2">
+            <h4>Play Super Ultra &#9835;</4>
+                <audio controls class="custom-player">
+                    <source src="audio/Super_Ultra_Happy_and_Fun.mp3" type="audio/mpeg">
+                    <source src="audio/mysong.ogg" type="audio/ogg">
+                </audio>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="slide-container">
+                <button class="slide-button prev" aria-label="Slide Sebelumnya">❮</button>
+                <button class="slide-button next" aria-label="Slide Berikutnya">❯</button>
+                
+                <!-- Slide 1 -->
+                <div class="slide-card active">
+                    <div class="hero-content">
+                        <h1>Sunat Happy And Fun</h1>
+                        <p>Sunat Menyenangkan untuk Pahlawan Kecil bunda</p>
+                        <div class="hero-buttons">
+<a href="forms.html" class="cta-button" target="_blank" rel="noopener noreferrer">Reservasi Sekarang!</a>
+                        </div>
+                    </div>
+                    <div class="hero-mascot">
+                        <img src="images/mascot1.png" alt="Maskot Sunat Ultra" class="mascot" width="400" height="500">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide-card active">
+                    <div class="hero-content">
+                        <i class="fas fa-shield-alt"></i>
+                        <h1>Keamanan Utama</h1>
+                        <p>Tim medis bersertifikasi dan peralatan steril dengan metode sunat terbaik</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Peralatan Modern</li>
+                            <li><i class="fas fa-check"></i> Lingkungan Steril</li>
+                            <li><i class="fas fa-check"></i> Staf Ahli</li>
+                        </ul>
+                    </div>
+                    <div class="hero-mascot">
+                        <img src="images/mascot.png" alt="Maskot Sunat Ultra" class="mascot" width="400" height="500">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="services" class="services">
+            <h2>Layanan Kami</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Perawatan Bayi</h3>
+                    <p>Prosedur yang aman dan lembut untuk bayi menggunakan teknik modern.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Perawatan Profesional</h3>
+                    <p>Perawatan medis ahli dengan rencana pengobatan yang dipersonalisasi.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Konsultasi</h3>
+                    <p>Konsultasi ramah untuk menjawab semua kekhawatiran dan pertanyaan Anda.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Perawatan Pasca Sunat</h3>
+                    <p>Panduan perawatan lengkap dan dukungan selama pemulihan.</p>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="gallery" class="gallery">
+            <div class="gallery-text">
+                <h2>Galeri</h2>
+                <p>Pahlawan kecil kita minggu ini</p>
+            </div>
+            <div class="gallery-grid">
+                <img src="galeri/image_1.jpg" alt="Gambar Galeri 1">
+                <img src="galeri/image_2.jpg" alt="Gambar Galeri 2">
+                <img src="galeri/image_3.jpg" alt="Gambar Galeri 3">
+                <img src="galeri/image_3.jpg" alt="Gambar Galeri 3">
+                <img src="galeri/image_4.jpeg" alt="Gambar Galeri 4">
+                <img src="galeri/image_5.jpeg" alt="Gambar Galeri 5">
+                <img src="galeri/image_6.jpeg" alt="Gambar Galeri 6">
+                <img src="galeri/image_7.jpeg" alt="Gambar Galeri 7">
+            </div>
+        </section>
+
+        <section id="methods" class="methods">
+            <h2>Kami cermat memilih metode paling aman dan nyaman untuk anak.</h2>
+            <p>Ayah Bunda bisa berkonsultasi dengan praktisi terlebih dahulu. Kami dapat membantu.</p>
+            <a href="https://wa.me/6285777111597" class="cta-button" target="_blank" rel="noopener noreferrer">Konsultasi</a>
+            <div class="method-list">
+                <div class="method-item">
+                    <span class="method-number">1</span>
+                    <h3>Super Lem</h3>
+                    <p>Super Lem adalah metode sunat modern yang menggunakan circle clamp untuk hasil presisi dan rapi, melindungi glans penis dari cedera. Kulit preputium dipotong dengan Electro Surgery Unit, lalu direkatkan menggunakan lem bedah khusus.</p>
+                </div>
+                <div class="method-item">
+                    <span class="method-number">2</span>
+                    <h3>Super Ring</h3>
+                    <p>Super Ring adalah metode sunat modern menggunakan cincin steril sekali pakai yang dipasang antara glans penis dan diikat sesuai SOP. Kulit preputium dirapikan dengan Electro Surgery Unit, dan cincin akan lepas sendiri dalam 7-12 hari. 
+                        </p>
+                </div>
+                <div class="method-item">
+                    <span class="method-number">3</span>
+                    <h3>Laser</h3>
+                    <p>Sunat Laser adalah metode sunat yang menggunakan flash cauter untuk pemotongan kulup penis kemudian dilakukan penjahitan di beberapa titik untuk mengontrol pendarahan</p>
+                </div>
+                <div class="method-item">
+                    <span class="method-number">4</span>
+                    <h3>Konvensional</h3>
+                    <p>Metode lama yang digunakan zaman dahulu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Tentang Sunat Ultra</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>zarzia sunat modern kini menjadi Sunat Ultra happy and fun. </p>
+                    <p>Di Sunat Ultra, kami percaya dalam membuat pengalaman sunat senyaman dan sebebas mungkin dari stres. Tim profesional berpengalaman kami memberikan perawatan dalam lingkungan yang ramah anak dengan fokus pada layanan yang nyaman dan menyenangkan.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Pertanyaan Umum</h2>
+            <p>Pertanyaan yang Sering ditanyakan</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Berapa usia terbaik?</h3>
+                    <p>Meskipun prosedur dapat dilakukan pada usia berapa pun, paling nyaman dilakukan saat masih bayi. Kami menyediakan prosedur yang aman untuk semua usia.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Berapa lama masa pemulihan?</h3>
+                    <p>Waktu pemulihan bervariasi berdasarkan usia. Biasanya, penyembuhan membutuhkan 1-2 minggu untuk bayi dan 2-3 minggu untuk anak anak. untuk sunat modern meskipun luka belum sepenuhnya sembuh anak atau pasien dapat berkaktifitas seperti biasa </p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Apakah sakit?</h3>
+                    <p>Kami menggunakan teknik manajemen nyeri modern untuk memastikan kenyamanan maksimal selama dan setelah prosedur.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hand-holding-medical"></i>
+                    <h3>Perawatan apa yang diperlukan setelahnya?</h3>
+                    <p>Kami memberikan instruksi perawatan lengkap dan dukungan selama proses penyembuhan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="maps" class="maps">
+            <h2>Temukan Kami Di Sini</h2>
+            <div class="maps-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8767.220425616266!2d108.25979600677364!3d-7.3011676962892444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f5ba5a57dcab5%3A0xcd784eeae3a83319!2sKlinik%20Zarzia%20(Ritadr%20Clinic)!5e0!3m2!1sid!2sid!4v1733652703519!5m2!1sid!2sid" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-info">
+                    <h3>Hubungi Kami</h3>
+                    <p><strong>Telepon:</strong> +6285 777 111 597</p>
+                    <p><strong>Email:</strong> sunat.ultra@gmail.com</p>
+                    <p><strong>Alamat:</strong> Jl. Lokasana Dusun kujang RT02/RW01 Desa Kujang Kecamatan Cikoneng, Kabupaten Ciamis 46261</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <p>Senin - Jumat: 06:00 - 17:00</p>
+                    <p>Sabtu: 06:00 - 15:00</p>
+                    <p>Minggu: 06:00 - 15:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@sunat.ultra" target="_blank" aria-label="Ikuti kami di TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com/sunat.ultra" target="_blank" aria-label="Ikuti kami di Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/@sunatultra" target="_blank" aria-label="Subscribe channel YouTube kami"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sunat Ultra. Hak cipta dilindungi undang-undang.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+<a href="https://wa.me/6285777111597" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,444 @@
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7ff; /* Warna biru muda */
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    position: relative;
+}
+/* Side Navigation Styles */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #ffd700;
+    --accent-color: #1a237e;
+    --text-color: #333;
+    --light-bg: #f0f8ff;
+    --white: #ffffff;
+    --gradient-start: #1a237e;
+    --gradient-middle: #1a237e;
+    --gradient-end: #1a237e;
+}
+
+
+/* Container */
+.container {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    gap: 20px; /* Jarak antar div */
+}
+.vip-icon {
+    left: 390px ;
+    top: -25px;
+    width: 50px;
+    position: relative;
+    align-items: end;
+    height: 50px;
+    z-index: 9;
+    
+}
+.vip-icon img {
+    height: 50px;
+    z-index: 9;
+    transition: transform 0.3s ease; /* Animasi selama 0.3 detik */
+}
+
+.vip-icon img:hover {
+    transform: translateY(-5px); /* Bergerak ke atas 5px */
+}
+.vip-icon1 {
+    left: 827px ;
+    top: 25px;
+    width: 50px;
+    position: relative;
+    align-items: start;
+    height: 50px;
+    z-index: 100;
+}
+.vip-icon1 img {
+    height: 50px;
+    z-index: 9;
+    transition: transform 0.3s ease; /* Animasi selama 0.3 detik */
+}
+.vip-icon1 img:hover {
+    transform: translateY(-5px); /* Bergerak ke atas 5px */
+}
+
+/* Input styling */
+input[type="text"] {
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1976d2; /* Warna border biru tua */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Warna latar input */
+    color: #333; /* Warna teks */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1565c0; /* Warna border lebih gelap saat focus */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5); /* Efek glow */
+}
+
+/* Bagian Kiri: Daftar Paket */
+.paket-container {
+    position: relative;
+    margin-top: 5%;
+    width: 130%;
+}
+
+.paket-list {
+    margin-top: -70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Jarak 15px antar card */
+}
+
+/* Styling untuk gambar di dalam card paket */
+.paket-card {
+    flex: 1 1 calc(40% - 10px); /* 3 card per baris dengan jarak 10px */
+    background-color: rgba(249, 249, 249, 0.5); /* Warna latar card dengan transparansi */
+    border: none; /* Warna border biru tua */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Agar gambar tidak melampaui card */
+    backdrop-filter: blur(10px); /* Efek blur */
+    -webkit-backdrop-filter: blur(10px); /* Untuk kompatibilitas browser */
+    padding: 15px; /* Padding untuk konten di dalam card */
+}
+
+.paket-card:hover {
+    transform: translateY(-5px); /* Efek hover: card naik sedikit */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(249, 249, 249, 0.8); /* Warna latar card lebih solid saat hover */
+}
+
+/*.paket-card img {
+    width: 100%; /* Gambar memenuhi lebar card */
+    height: 100px; /* Tinggi gambar */
+   /* object-fit: cover; /* Gambar di-crop agar sesuai dengan ukuran */
+    border-radius: 8px 8px 0 0; /* Sudut atas gambar melengkung */
+} 
+
+.paket-card h3 {
+    color: #1976d2; /* Warna biru tua */
+    margin: 10px 0 5px 0;
+    padding: 0 10px; /* Padding untuk teks */
+}
+
+.paket-card p {
+    margin: 5px 0;
+    color: #333; /* Warna teks gelap */
+    padding: 0 10px; /* Padding untuk teks */
+}
+
+/* Bagian Kanan: Form Pendaftaran */
+.form-container {
+    margin-top: 7%;
+    width: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5); /* Transparan */
+    
+}
+#loading {
+    display: none;
+    color: #4CAF50; /* Warna hijau */
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    animation: blink 1s infinite; /* Efek berkedip */
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
+
+.hx {
+    position: relative;
+    top: -5px;
+    font-size: 29PX;
+    color: var(--secondary-color);
+    margin-bottom: 0px;
+    align-items: center;
+}
+.hx img {
+    bottom: -20px;
+    position: relative;
+    height: 60px;
+    z-index: 10;
+}
+.hx text {
+    margin left: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1976d2; /* Warna biru tua */
+}
+
+label {
+    margin-left: 5%;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1976d2; /* Warna biru tua */
+}
+
+input, textarea, select {
+    margin left: 10%;
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #1976d2; /* Warna biru tua */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Warna latar input */
+}
+input, textarea {
+    margin-left: 5%;
+}
+.select-paket {
+    margin-left: 10px;
+    
+}
+.button-submit {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffeb3b; /* Warna kuning */
+    color: #000000; /* Warna teks hitam */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Agar tombol berada di tengah */
+}
+
+.button-submit:hover {
+    background-color: #fbc02d; /* Warna kuning lebih gelap */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-submit:active {
+    background-color: #f9a825; /* Warna kuning lebih gelap lagi */
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Container untuk input usia dan dropdown */
+.usia-input {
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Membuat elemen sejajar vertikal */
+    gap: 10px; /* Jarak antara input dan dropdown */
+}
+
+/* Styling untuk input usia */
+.usia-input input {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #1976d2; /* Warna border biru tua */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Warna latar input */
+}
+
+/* Styling untuk dropdown satuan */
+.usia-input select {
+    width: 35%;
+    padding: 8px;
+    border: 1px solid #1976d2; /* Warna border biru tua */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Warna latar input */
+}
+
+/* Styling untuk input nomor WhatsApp */
+#nomorWA {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #1976d2; /* Warna biru tua */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Warna latar input */
+}
+.reservasi-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservasi-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#reservasiTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#reservasiTable th, #reservasiTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#reservasiTable th {
+    background-color: var(--secondary-color);
+    color: #3c3c3c;
+}
+
+#reservasiTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Responsive Design untuk Mobile (lebar layar ≤ 768px) */
+@media (max-width: 768px) {
+
+    .hx {
+        margin-left: 5%;
+        position: relative;
+        margin-top: 10PX;
+        font-size: 25PX;
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .vip-icon {
+        left: 330px ;
+        top: 40px;
+        width: 50px;
+        position: relative;
+        align-items: end;
+        height: 50px;
+        z-index: 9;
+    }
+    .vip-icon img {
+        height: 50px;
+        z-index: 9;
+       
+    }
+    .vip-icon1 {
+        left: 330px ;
+        top: 310px;
+        width: 50px;
+        position: relative;
+        align-items: start;
+        height: 50px;
+        z-index: 9;
+       
+    }
+    .vip-icon1 img {
+        height: 50px;
+        z-index: 9;
+    }
+
+    .vip-icon img:hover {
+        transform: translateY(-5px); /* Bergerak ke atas 5px */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #1976d2;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #1976d2;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .paket-list {
+        width: 105%;
+    }
+
+    .floating-logo, .floating-logo img {
+        margin-top: -5px;
+        width: 70px;
+    }
+
+    .container {
+        flex-direction: column; /* Tampilkan elemen secara vertikal */
+        padding: 5px;
+    }
+
+    .paket-container, .form-container {
+        width: 90%; /* Lebar penuh di mobile */
+        margin-bottom: 20px; /* Jarak antara bagian kiri dan kanan */
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20%;
+    }
+
+    .paket-card {
+        margin-left: 5%;
+        flex: 1 1 calc(100% - 5px); /* 3 card per baris dengan jarak 10px */
+        width: 90%;
+        background-color: #f9f9f9; /* Warna latar card */
+        border: 0px solid #1976d2; /* Warna border biru tua */
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden; /* Agar gambar tidak melampaui card */
+    }
+
+    .usia-input {
+        flex-direction: row; /* Tampilkan elemen secara vertikal di mobile */
+        gap: 5px; /* Jarak antara elemen di mobile */
+    }
+
+    .usia-input input,
+    .usia-input select {
+        width: 30%; /* Lebar penuh di mobile */
+    }
+    input, select {
+        margin-left: 5%;
+    }
+
+    textarea {
+        margin-left: 5%;
+    }
+    .form-container {
+        width: 90%; /* Lebar penuh di mobile */
+        padding: 10px;
+        margin-left: 5%;
+    }
+}
